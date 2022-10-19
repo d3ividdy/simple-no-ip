@@ -11,7 +11,7 @@ docker run --name simple-no-ip \
     -e NO_IP_USER=<noip_user> \
     -e NO_IP_PASS=<noip_password> \
     -e NO_IP_DDNS=<noip_ddns> \
-    d3ividdy/simple-no-ip:0.0.1
+    deividdy/simple-no-ip:0.0.1
 ```
 
 ## Change-log (tags)
@@ -22,6 +22,6 @@ docker run --name simple-no-ip \
 ## Docker Build & Publish
 
 ```sh
-docker build -f Dockerfile -t d3ividdy/simple-no-ip:<tag> . --no-cache
-docker push d3ividdy/simple-no-ip:<tag>
+docker build -f Dockerfile -t deividdy/simple-no-ip:<tag> . --no-cache
+docker push deividdy/simple-no-ip:<tag>
 ```
