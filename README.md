@@ -18,3 +18,10 @@ docker run --name simple-no-ip \
 
 - 0.0.1
   - base code
+
+## Docker Build & Publish
+
+```sh
+docker build -f Dockerfile -t d3ividdy/simple-no-ip:<tag> . --no-cache
+docker push d3ividdy/simple-no-ip:<tag>
+```
