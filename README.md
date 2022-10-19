@@ -14,6 +14,14 @@ docker run --name simple-no-ip \
     deividdy/simple-no-ip:0.0.1
 ```
 
+### Cron (linux)
+
+```sh
+crontab -e
+# 0 * * * * docker run --name simple-no-ip -e NO_IP_USER=<noip_user> -e NO_IP_PASS=<noip_password> -e NO_IP_DDNS=<noip_ddns> deividdy/simple-no-ip:0.0.1 >> /tmp/simple-no-ip.log && docker rm simple-no-ip >> /tmp/simple-no-ip.log
+# atualização de hora em hora
+```
+
 ## Change-log (tags)
 
 - 0.0.1
